@@ -1,9 +1,11 @@
+import Hero from "../components/home/Hero";
+import HowItWorks from "../components/home/HowItWorks";
+
 function Index() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-4xl font-bold text-white">
-        WeddingWeather
-      </h1>
+    <div className="space-y-12">
+      <Hero />
+      <HowItWorks />
     </div>
   );
 }
