@@ -1,10 +1,5 @@
 import { apiClient } from "./client";
-
-export interface CityDto {
-  id: string;
-  name: string;
-  country: string;
-}
+import type { CityDto } from "../../lib/types";
 
 export const cityApi = {
   getAll: () => apiClient.get<CityDto[]>("/cities"),
