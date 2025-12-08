@@ -1,18 +1,8 @@
 import { apiClient } from "./client";
-
-export interface WeatherSearchParams {
-  cityId: string;
-  date: string;
-}
-
-export interface WeatherPredictionResponse {
-  cityName: string;
-  date: string;
-  probabilitySunny: number;
-  probabilityCloudy: number;
-  probabilityRain: number;
-  averageTemperatureC: number;
-}
+import type {
+  WeatherSearchParams,
+  WeatherPredictionResponse,
+} from "../../lib/types";
 
 export const weatherApi = {
   getPrediction: (params: WeatherSearchParams) => {
